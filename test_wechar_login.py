@@ -22,7 +22,7 @@ class TestWechar(Base):
         self.driver.find_element_by_xpath('//*[@id="menu_contacts"]/span').click()
 
     def test_login_cookie(self):
-        # 存入cookie
+        # 存入cookies
         # cookies = self.driver.get_cookies()
         # with open("cookie2.txt", "w", encoding="utf-8") as f:
         #     # 采用写文件的方法
