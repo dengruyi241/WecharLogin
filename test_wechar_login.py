@@ -22,9 +22,9 @@ class TestWechar(Base):
         self.driver.find_element_by_xpath('//*[@id="menu_contacts"]/span').click()
 
     def test_login_cookie(self):
-        # 存入cookies
+        # # 存入cookies
         # cookies = self.driver.get_cookies()
-        # with open("cookie2.txt", "w", encoding="utf-8") as f:
+        # with open("cookie.txt", "w", encoding="utf-8") as f:
         #     # 采用写文件的方法
         #     f.write(json.dumps(cookies))
         #     #采用dump的方法写入
@@ -41,5 +41,5 @@ class TestWechar(Base):
             self.driver.add_cookie(i)
         # 刷新浏览器
         self.driver.refresh()
-        self.driver.find_element_by_xpath('//*[@id="menu_manageTools"]/span').click()
+        self.driver.find_element_by_xpath('//*[@id="menu_contacts"]').click()
         sleep(5)
